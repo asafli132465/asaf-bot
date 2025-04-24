@@ -5,4 +5,14 @@ services:
     plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"
-    envVars: []
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: YOUR_TELEGRAM_TOKEN
+      - key: TELEGRAM_CHAT_ID
+        value: YOUR_CHAT_ID
+      - key: FINNHUB_TOKEN
+        value: YOUR_FINNHUB_API_KEY
+      - key: ALPHA_VANTAGE_KEY
+        value: YOUR_ALPHA_KEY
+      - key: OPENAI_API_KEY
+        value: YOUR_OPENAI_KEY
